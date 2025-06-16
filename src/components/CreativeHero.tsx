@@ -117,7 +117,7 @@ const CreativeHero: React.FC<CreativeHeroProps> = ({ scrollToSection = () => { }
   }, []);
 
   return (
-    <section className="min-h-screen relative overflow-hidden" style={{ backgroundColor: '#f9f6f1' }}>
+    <section className="min-h-screen w-full relative overflow-hidden" style={{ backgroundColor: '#f9f6f1' }}>
       <canvas ref={canvasRef} className="absolute inset-0 pointer-events-none opacity-20" />
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/3 w-96 h-96 rounded-full blur-3xl animate-pulse opacity-5" style={{ backgroundColor: '#b8860b', transform: `translate(${Math.sin(scrollY * 0.002) * 30}px, ${Math.cos(scrollY * 0.002) * 20}px)` }} />
@@ -130,12 +130,12 @@ const CreativeHero: React.FC<CreativeHeroProps> = ({ scrollToSection = () => { }
           </div>
         ))}
       </div>
-      <div className="relative z-10 min-h-screen flex items-center">
-        <div className="container mt-32 mx-auto px-6 max-w-7xl">
+      <div className="relative z-10 min-h-screen w-full flex items-center">
+        <div className="container mt-32 w-full mx-auto md:px-6 max-w-7xl">
 
-          <div className="flex flex-col items-center justify-center text-center space-y-12">
+          <div className="flex flex-col items-center w-full justify-center text-center space-y-12">
 
-            <div className={`transition-all duration-1000 ${isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
+            <div className={`w-full transition-all duration-1000 ${isLoaded ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}`}>
               <div className="relative w-48 h-48 md:w-56 md:h-56 mx-auto mb-8">
 
                 <div className="absolute inset-0 rounded-full animate-spin-slow p-1" style={{ background: `linear-gradient(45deg, #b8860b, #141414, #b8860b)` }}>
@@ -158,7 +158,7 @@ const CreativeHero: React.FC<CreativeHeroProps> = ({ scrollToSection = () => { }
                 </div>
               </div>
             </div>
-            <div className={`transition-all duration-1000 delay-300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className={`w-full transition-all duration-1000 delay-300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <div className="mb-4" style={{ color: '#b8860b' }}>
                 <div className="inline-block px-4 py-2 rounded-full border" style={{ borderColor: '#b8860b', backgroundColor: 'rgba(184, 134, 11, 0.1)' }}>
                   <span className="text-sm font-semibold tracking-wider">
@@ -186,7 +186,7 @@ const CreativeHero: React.FC<CreativeHeroProps> = ({ scrollToSection = () => { }
                 <Sparkles className="ml-2" size={20} style={{ color: '#b8860b' }} />
               </div>
             </div>
-            <div className={`transition-all duration-1000 delay-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className={`w-full transition-all duration-1000 delay-700 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <p className="text-lg md:text-xl max-w-3xl mx-auto mb-8 leading-relaxed" style={{ color: '#141414', opacity: 0.8 }}>
                 Transforming ideas into visual masterpieces. I craft compelling narratives through
                 <span className="font-semibold" style={{ color: '#b8860b' }}> innovative design</span>,
@@ -194,7 +194,7 @@ const CreativeHero: React.FC<CreativeHeroProps> = ({ scrollToSection = () => { }
                 <span className="font-semibold" style={{ color: '#b8860b' }}> artistic excellence</span> that captivates audiences and drives results.
               </p>
             </div>
-            <div className={`transition-all duration-1000 delay-900 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className={`w-full transition-all duration-1000 delay-900 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto mb-12">
                 {[{ number: "100+", label: "Projects Completed" }, { number: "50+", label: "Happy Clients" }, { number: "99%", label: "Client Satisfaction" }].map((stat, index) => (
                   <div key={index} className="text-center group hover:scale-105 transition-transform duration-300">
@@ -208,7 +208,7 @@ const CreativeHero: React.FC<CreativeHeroProps> = ({ scrollToSection = () => { }
                 ))}
               </div>
             </div>
-            <div className={`transition-all duration-1000 delay-1100 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className={`w-full transition-all duration-1000 delay-1100 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <div className="flex flex-wrap justify-center gap-4 mb-12">
                 {[{ icon: Palette, label: 'Brand Identity' }, { icon: Camera, label: 'Photography' }, { icon: Layers, label: 'UI/UX Design' }, { icon: Pen, label: 'Illustration' }].map((skill, index) => (
                   <div key={index} className="group flex items-center space-x-2 px-4 py-2 rounded-full border hover:scale-105 transition-all duration-300" style={{ borderColor: '#141414', backgroundColor: 'rgba(184, 134, 11, 0.05)' }}>
@@ -218,7 +218,7 @@ const CreativeHero: React.FC<CreativeHeroProps> = ({ scrollToSection = () => { }
                 ))}
               </div>
             </div>
-            <div className={`transition-all duration-1000 delay-1300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className={`w-full transition-all duration-1000 delay-1300 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <button onClick={() => scrollToSection('portfolio')} className="group relative px-8 py-4 text-white rounded-full hover:shadow-2xl hover:scale-105 transition-all duration-300 font-semibold overflow-hidden" style={{ backgroundColor: '#b8860b' }}>
                   <span className="relative z-10 flex items-center justify-center">
@@ -229,7 +229,7 @@ const CreativeHero: React.FC<CreativeHeroProps> = ({ scrollToSection = () => { }
                   <div className="absolute inset-0 bg-white/20 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 skew-x-12"></div>
                 </button>
 
-                <button onClick={() => scrollToSection('contact')} className="group relative px-8 py-4 border-2 rounded-full hover:text-white transition-all duration-300 font-semibold overflow-hidden" style={{ borderColor: '#141414', color: '#141414' }}>
+                <button onClick={() => scrollToSection('contact')} className="group relative px-8 py-4 border-2 rounded-full hover:!text-white transition-all duration-300 font-semibold overflow-hidden" style={{ borderColor: '#141414', color: '#141414' }}>
                   <span className="relative z-10 flex items-center justify-center">
                     Let's Create Magic Together
                     <div className="inline-block ml-2 group-hover:translate-x-1 transition-transform duration-300">

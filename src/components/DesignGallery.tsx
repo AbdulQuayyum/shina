@@ -361,10 +361,10 @@ const DesignGallery: React.FC = () => {
             ))}
           </div>
         </AnimatedSection>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 items-stretch lg:grid-cols-3 gap-8">
           {filteredWorks.map((work, index) => (
-            <AnimatedSection key={work.id} animation="scale-in" delay={index * 100}>
-              <div className="group relative overflow-hidden rounded-2xl bg-[#f9f6f1] shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 cursor-pointer border border-[#141414]/10" onMouseEnter={() => setHoveredWork(work.id)} onMouseLeave={() => setHoveredWork(null)} onClick={() => handleImageClick(work)}>
+            <AnimatedSection key={work.id} className='h-full flex-1' animation="scale-in" delay={index * 100}>
+              <div className="group relative overflow-hidden h-full flex-1 rounded-2xl bg-[#f9f6f1] shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 cursor-pointer border border-[#141414]/10" onMouseEnter={() => setHoveredWork(work.id)} onMouseLeave={() => setHoveredWork(null)} onClick={() => handleImageClick(work)}>
                 <div className="relative h-64 overflow-hidden">
                   <img src={work.image} alt={work.title} className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-1 filter group-hover:brightness-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#141414]/80 via-[#141414]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

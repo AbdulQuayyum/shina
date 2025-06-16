@@ -8,12 +8,7 @@ interface AnimatedSectionProps {
   className?: string;
 }
 
-const AnimatedSection: React.FC<AnimatedSectionProps> = ({ 
-  children, 
-  animation = 'slide-up', 
-  delay = 0,
-  className = '' 
-}) => {
+const AnimatedSection: React.FC<AnimatedSectionProps> = ({ children, animation = 'slide-up', delay = 0, className = '' }) => {
   const [isVisible, setIsVisible] = useState(false);
   const elementRef = useRef<HTMLDivElement>(null);
 
@@ -39,10 +34,7 @@ const AnimatedSection: React.FC<AnimatedSectionProps> = ({
   const animationClass = isVisible ? `animate-${animation}` : 'opacity-0';
 
   return (
-    <div 
-      ref={elementRef} 
-      className={`${animationClass} ${className}`}
-    >
+    <div ref={elementRef} className={`${animationClass} ${className}`} >
       {children}
     </div>
   );

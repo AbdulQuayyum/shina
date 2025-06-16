@@ -46,16 +46,16 @@ const Index = () => {
         </div>
       </nav>
 
-      <section id="home">
+      <section className='w-full' id="home">
         <CreativeHero scrollToSection={scrollToSection} />
       </section>
 
-      <section id="portfolio">
+      <section className='w-full' id="portfolio">
         <DesignGallery />
       </section>
 
-      <section id="about" className="py-20" style={{ background: 'linear-gradient(135deg, #f9f6f1 0%, #faf7f2 100%)' }}>
-        <div className="container mx-auto px-6">
+      <section id="about" className="py-20 w-full" style={{ background: 'linear-gradient(135deg, #f9f6f1 0%, #faf7f2 100%)' }}>
+        <div className="container w-full mx-auto px-6">
           <AnimatedSection animation="slide-up">
             <h2 className="text-5xl font-bold text-center mb-16" style={{ background: 'linear-gradient(135deg, #b8860b 0%, #d4a017 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Design Philosophy</h2>
           </AnimatedSection>
@@ -66,11 +66,11 @@ const Index = () => {
                 <h3 className="text-3xl font-bold mb-6" style={{ color: '#141414' }}>Where Economics Meets Design</h3>
                 <p className="mb-4 leading-relaxed text-lg" style={{ color: '#141414', opacity: 0.8 }}>
                   My unique background in Economics at the University of Lagos brings analytical depth
-                  to every design decision. I understand that great design isn't just beautiful—it's strategic.
+                  to every design decision. I understand that great design isn't just beautifulit's strategic.
                 </p>
                 <p className="mb-4 leading-relaxed text-lg" style={{ color: '#141414', opacity: 0.8 }}>
                   By studying consumer behavior, market dynamics, and decision-making processes, I create
-                  designs that don't just look good—they perform, persuade, and drive results.
+                  designs that don't just look goodthey perform, persuade, and drive results.
                 </p>
                 <p className="leading-relaxed text-lg" style={{ color: '#141414', opacity: 0.8 }}>
                   Every brand needs a visual voice that speaks to its audience. I help businesses find
@@ -99,15 +99,15 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-20">
-        <div className="container mx-auto px-6">
+      <section className="py-20 w-full">
+        <div className="container w-full mx-auto px-6">
           <AnimatedSection animation="slide-up">
             <h2 className="text-5xl font-bold text-center mb-16" style={{ background: 'linear-gradient(135deg, #b8860b 0%, #d4a017 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>What I Create</h2>
           </AnimatedSection>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <AnimatedSection animation="scale-in" delay={0}>
-              <div className="p-8 rounded-2xl transition-transform duration-300 hover:-translate-y-2 relative overflow-hidden group" style={{ background: 'linear-gradient(135deg, #b8860b 0%, #d4a017 100%)', color: '#f9f6f1' }}>
+          <div className="grid md:grid-cols-3 items-stretch gap-8 max-w-6xl mx-auto">
+            <AnimatedSection className="h-full flex-1" animation="scale-in" delay={0}>
+              <div className="p-8 rounded-2xl transition-transform duration-300 hover:-translate-y-2 h-full flex-1 relative overflow-hidden group" style={{ background: 'linear-gradient(135deg, #b8860b 0%, #d4a017 100%)', color: '#f9f6f1' }}>
                 <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full opacity-20 animate-pulse" style={{ backgroundColor: '#f9f6f1' }}></div>
                 <h3 className="text-2xl font-bold mb-4 relative z-10">Brand Identity</h3>
                 <p className="mb-6 relative z-10" style={{ color: '#f9f6f1', opacity: 0.9 }}>Complete brand systems including logos, color palettes, typography, and brand guidelines.</p>
@@ -120,8 +120,8 @@ const Index = () => {
               </div>
             </AnimatedSection>
 
-            <AnimatedSection animation="scale-in" delay={200}>
-              <div className="p-8 rounded-2xl transition-transform duration-300 hover:-translate-y-2 relative overflow-hidden group" style={{ background: 'linear-gradient(135deg, #9a7209 0%, #b8860b 100%)', color: '#f9f6f1' }}>
+            <AnimatedSection className="h-full flex-1" animation="scale-in" delay={200}>
+              <div className="p-8 rounded-2xl transition-transform duration-300 hover:-translate-y-2 h-full flex-1 relative overflow-hidden group" style={{ background: 'linear-gradient(135deg, #9a7209 0%, #b8860b 100%)', color: '#f9f6f1' }}>
                 <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full opacity-20 animate-pulse" style={{ backgroundColor: '#f9f6f1' }}></div>
                 <h3 className="text-2xl font-bold mb-4 relative z-10">Digital Design</h3>
                 <p className="mb-6 relative z-10" style={{ color: '#f9f6f1', opacity: 0.9 }}>Modern digital solutions for web, mobile, and social media platforms.</p>
@@ -134,8 +134,8 @@ const Index = () => {
               </div>
             </AnimatedSection>
 
-            <AnimatedSection animation="scale-in" delay={400}>
-              <div className="p-8 rounded-2xl transition-transform duration-300 hover:-translate-y-2 relative overflow-hidden group" style={{ background: 'linear-gradient(135deg, #8b6914 0%, #9a7209 100%)', color: '#f9f6f1' }}>
+            <AnimatedSection className="h-full flex-1" animation="scale-in" delay={400}>
+              <div className="p-8 rounded-2xl transition-transform duration-300 hover:-translate-y-2 h-full flex-1 relative overflow-hidden group" style={{ background: 'linear-gradient(135deg, #8b6914 0%, #9a7209 100%)', color: '#f9f6f1' }}>
                 <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full opacity-20 animate-pulse" style={{ backgroundColor: '#f9f6f1' }}></div>
                 <h3 className="text-2xl font-bold mb-4 relative z-10">Data Visualization</h3>
                 <p className="mb-6 relative z-10" style={{ color: '#f9f6f1', opacity: 0.9 }}>Transforming complex data into compelling visual stories and infographics.</p>
@@ -151,8 +151,8 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-20" style={{ background: 'linear-gradient(135deg, #f9f6f1 0%, #faf7f2 100%)' }}>
-        <div className="container mx-auto px-6">
+      <section id="contact" className="py-20 w-full" style={{ background: 'linear-gradient(135deg, #f9f6f1 0%, #faf7f2 100%)' }}>
+        <div className="container w-full mx-auto px-6">
           <AnimatedSection animation="slide-up">
             <h2 className="text-5xl font-bold text-center mb-16" style={{ background: 'linear-gradient(135deg, #b8860b 0%, #d4a017 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>Let's Create Together</h2>
           </AnimatedSection>
@@ -176,8 +176,8 @@ const Index = () => {
             </div>
 
             <AnimatedSection animation="slide-up" delay={600}>
-              <div className="text-center mt-12">
-                <div className="p-8 rounded-2xl transition-transform duration-300 hover:-translate-y-2 inline-block" style={{ backgroundColor: 'rgba(249, 246, 241, 0.8)', backdropFilter: 'blur(10px)', border: '1px solid rgba(184, 134, 11, 0.2)' }}>
+              <div className="text-center w-full mt-12">
+                <div className="p-8 rounded-2xl md:w-fit w-full transition-transform duration-300 hover:-translate-y-2 inline-block" style={{ backgroundColor: 'rgba(249, 246, 241, 0.8)', backdropFilter: 'blur(10px)', border: '1px solid rgba(184, 134, 11, 0.2)' }}>
                   <h3 className="text-2xl font-bold mb-4" style={{ color: '#141414' }}>Currently Studying</h3>
                   <p className="text-lg" style={{ color: '#141414', opacity: 0.8 }}>University of Lagos</p>
                   <p style={{ color: '#b8860b' }}>B.Sc. Economics | Class of 2027</p>
