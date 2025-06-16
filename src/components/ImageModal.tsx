@@ -48,7 +48,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ isOpen, onClose, image }) => {
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogOverlay className="bg-black/90" />
       <DialogContent className={`${isMaximized ? 'w-screen h-screen max-w-none max-h-none rounded-none' : 'max-w-6xl w-[90vw] h-[90vh] rounded-xl'} p-0 overflow-hidden transition-all duration-300`} >
-        <div className="absolute top-0 left-0 right-0 z-20 bg-black/80 backdrop-blur-sm text-white p-4 flex justify-between items-center">
+        <div className="absolute top-0 left-0 right-0 z-20 bg-black/80 backdrop-blur-sm text-white p-4 flex flex-col md:flex-row gap-8 justify-between items-center">
           <div>
             <h3 className="text-lg font-semibold">{image.title}</h3>
             <p className="text-sm text-gray-300">{image.description}</p>
