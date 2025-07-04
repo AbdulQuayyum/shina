@@ -170,7 +170,7 @@ const Index = () => {
             <div className="grid md:grid-cols-3 gap-8">
               <ContactCard icon={<Mail size={32} />} title="Email" value="emmanueladeniran2004@gmail.com" delay={0} />
 
-              <ContactCard icon={<Phone size={32} />} title="Phone" value="+234 904 205 9549" delay={200} />
+              <ContactCard icon={<Phone size={32} />} title="Phone" value="+234 704 205 9549" delay={200} />
 
               <ContactCard icon={<Linkedin size={32} />} title="LinkedIn" value="Connect with me" delay={400} isLink={true} href="https://linkedin.com/in/emmanuel-adeniran" />
             </div>
